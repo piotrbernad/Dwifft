@@ -70,19 +70,19 @@ class DwifftTests: XCTestCase {
                 fatalError("not implemented")
             }
             
-            private override func insertRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation) {
-                XCTAssertEqual(animation, UITableViewRowAnimation.left, "incorrect insertion animation")
-                for indexPath in indexPaths {
-                    self.insertionExpectations[(indexPath as NSIndexPath).row]!.fulfill()
-                }
-            }
-            
-            private override func deleteRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation) {
-                XCTAssertEqual(animation, UITableViewRowAnimation.right, "incorrect insertion animation")
-                for indexPath in indexPaths {
-                    self.deletionExpectations[(indexPath as NSIndexPath).row]!.fulfill()
-                }
-            }
+//            private override func insertRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation) {
+//                XCTAssertEqual(animation, UITableViewRowAnimation.left, "incorrect insertion animation")
+//                for indexPath in indexPaths {
+//                    self.insertionExpectations[(indexPath as NSIndexPath).row]!.fulfill()
+//                }
+//            }
+//            
+//            private override func deleteRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation) {
+//                XCTAssertEqual(animation, UITableViewRowAnimation.right, "incorrect insertion animation")
+//                for indexPath in indexPaths {
+//                    self.deletionExpectations[(indexPath as NSIndexPath).row]!.fulfill()
+//                }
+//            }
             
         }
         
@@ -154,19 +154,19 @@ class DwifftTests: XCTestCase {
                 fatalError("not implemented")
             }
             
-            private override func insertItems(at indexPaths: [IndexPath]) {
-                super.insertItems(at: indexPaths)
-                for indexPath in indexPaths {
-                    self.insertionExpectations[(indexPath as NSIndexPath).item]!.fulfill()
-                }
-            }
-            
-            private override func deleteItems(at indexPaths: [IndexPath]) {
-                super.deleteItems(at: indexPaths)
-                for indexPath in indexPaths {
-                    self.deletionExpectations[(indexPath as NSIndexPath).item]!.fulfill()
-                }
-            }
+//            private override func insertItems(at indexPaths: [IndexPath]) {
+//                super.insertItems(at: indexPaths)
+//                for indexPath in indexPaths {
+//                    self.insertionExpectations[(indexPath as NSIndexPath).item]!.fulfill()
+//                }
+//            }
+//            
+//            private override func deleteItems(at indexPaths: [IndexPath]) {
+//                super.deleteItems(at: indexPaths)
+//                for indexPath in indexPaths {
+//                    self.deletionExpectations[(indexPath as NSIndexPath).item]!.fulfill()
+//                }
+//            }
             
         }
         

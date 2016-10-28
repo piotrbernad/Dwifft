@@ -173,7 +173,7 @@
 				TargetAttributes = {
 					041EBB911B89679200E113B3 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 					};
 					041EBB9C1B89679200E113B3 = {
 						CreatedOnToolsVersion = 6.4;
